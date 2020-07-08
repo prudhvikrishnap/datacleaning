@@ -35,5 +35,5 @@ run_analysis <- function(){
   library(data.table)
   dataDT <- data.table(data)
   calculatedData<- dataDT[, lapply(.SD, mean), by=c("subjectId", "activity")]
-  write.table(calculatedData, "second_tidy_data.txt")
+  write.table(calculatedData, "second_tidy_data.txt", row.name=FALSE)
 }
