@@ -17,15 +17,14 @@ Design
 Here is a list of operations.
 
 1. Download and Unzip the data set into the working program directory 
-2. Load test, training data sets into data frames. Then, load source variable names for test and training data sets. After, load the activity labels
-3. Combine test and training data frames using rbind
+2. Load test (into subject_test, X_test and Y_test variables), training data sets (into into subject_train, X_train and Y_train variables). Then, load source variable names for test and training data sets. After, load the activity labels (features and activities variable)
+3. Combine test and training data frames using rbind (load the result into data variable)
 4. Pair  the data frames to  include the mean and standard deviation variables
-5. Replace activity IDs with the activity labels for readability
-6. Combine the data frames to produce one data frame containing the subjects, measurements and activities
-7. Produce "first_tidy_data.txt" with the combined data frame as the 1st expected output
-8. Create another data set using the data.table library to group the tidy data by subject and activity
-9. Apply mean and standard deviation across the groups
-10. Produce "second_tidy_data.txt" as the 2nd expected output
+5. Combine the data frames to produce one data frame containing the subjects, measurements and activities
+6. Produce "first_tidy_data.txt" with the combined data frame as the 1st expected output
+7. Create another data set using the data.table library to group the tidy data by subject and activity
+8. Apply mean and standard deviation across the groups (store the result in calculatedData variable)
+9. Produce "second_tidy_data.txt" as the 2nd expected output
 
 The R code is available [here](https://github.com/vickkiee/datacleaning/blob/master/run_analysis.R) 
 
